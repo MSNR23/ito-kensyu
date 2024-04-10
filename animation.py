@@ -29,7 +29,7 @@ def update(frame):
     x = np.sin(theta_data[frame])  # 振り子のx座標
     y = -np.cos(theta_data[frame])  # 振り子のy座標
     pendulum.set_data([0, x], [0, y])  # 振り子の位置を更新
-    return pendulum
+    return pendulum,
 
 # CSVファイルのパス
 csv_file_path = 'hougan_single_pendulum_rl_data_epoch_1.csv'
